@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Slab:wght@600&display=swap");
+
+* {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.no-use {
+  background-color: #fcd602;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+nav li {
+  display: inline-block;
+  align-items: center;
+}
+nav li a {
+  margin-left: 100px;
+  font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+}
+header h1 a {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+.home-singUp {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.nav a:hover {
+  color: #f67a1f;
+}
+
+.butter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+  margin-left: 30vh;
+  height: fit-content;
+  width: fit-content;
+}
+.butter img {
+  margin-left: 10%;
+  height: 400px;
+  width: 400px;
+}
+
+.cover-text {
+  width: 400px;
+}
+.cover-text h1 {
+  font-size: 4rem;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  box-sizing: border-box;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 1.5rem;
+}
+/* --restaurant-------------------------- */
+
+.cards-container {
+  width: 30%;
+  margin: 20px auto;
+}
+.res-cards {
+  background-color: #f8f8f8;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  box-shadow: 10px 10px 40px 2px rgba(128, 128, 128, 0.4);
+  border-radius: 10px;
+}
+.res-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.card {
+  background: #fff;
+  box-shadow: 10px 10px 40px 2px rgba(128, 128, 128, 0.4);
+  display: inline-block;
+  width: 375px;
+  border-radius: 10px;
+}
+.card-media img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-description {
+  padding: 10px;
+}
+
+.about-place {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place-name {
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.place-speciality,
+.per-person {
+  font-size: 14px;
+  color: grey;
+}
+
+.rating {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma;
+  border-radius: 4px;
+  background: #0a6d0acc;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 2px 0;
+  margin: 0 0 6px 30px;
+}
+
+.food-types-heading h3,
+.res-heading h3,
+.food-brand h3 {
+  font-family: Okra, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  padding: 2%;
+}
+
+.food-types {
+  height: auto;
+  width: 100%;
+  display: flex;
+  margin: 30px;
+  justify-content: space-around;
+}
+.food-types-img img {
+  width: 150px;
+  height: 150px;
+}
+.food-name {
+  text-align: center;
+  font-family: Okra, Helvetica, sans-serif;
+  font-weight: 500;
+  color: grey;
+}
+/* brands */
+.food-brands {
+  height: auto;
+  width: 100%;
+  display: flex;
+  margin: 30px;
+  justify-content: space-around;
+}
+.food-brand-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+.brand {
+  text-align: center;
+  font-family: Okra, Helvetica, sans-serif;
+  font-weight: 500;
+  color: grey;
+}
+
+.log-bg-img {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sign-bg-img {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outside-sign-form form {
+  height: 600px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a9ce05;
+  padding: 30px;
+  border-radius: 20px;
+  position: absolute;
+  top: 7%;
+  left: 10%;
+}
+.outside-form form {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbcc8a;
+  padding: 30px;
+  border-radius: 20px;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+.inside-form h3 {
+  text-align: center;
+}
+
+.outside-form * {
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+}
+.outside-sign-form * {
+  padding: 12px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.inside-form .input-name,
+.input-pass {
+  width: 100%;
+}
+
+.input-box label {
+  padding: 0px;
+}
+.agree {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-top: 1px;
+}
+
+.log-in {
+  background-color: #f67f9d;
+  font-size: 1.1rem;
+}
+.sign-in {
+  background-color: #c2337d;
+  font-size: 1.1rem;
+}
+.btn {
+  text-align: center;
+  margin-left: 20px;
+}
+p {
+  text-align: center;
+  font-size: 1rem;
+}
+.have-acc a {
+  padding: 0px;
+  color: #ffe62c;
+}
