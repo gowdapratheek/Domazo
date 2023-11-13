@@ -273,6 +273,17 @@ pre {
   top: 3%;
   left: 10%;
 }
+
+/* @media (max-width: 480px) {
+  .outside-sign-form form {
+    height: 600px;
+    width: 300px;
+    margin: auto;
+    padding: 2px;
+    top: 3%;
+    left: 5%;
+  }
+} */
 .outside-form form {
   height: 500px;
   width: 500px;
@@ -300,7 +311,13 @@ pre {
   border: 0;
   border-radius: 5px;
 }
-
+/* @media (max-width: 480px) {
+  .outside-sign-form * {
+    padding: 3%;
+    border: 0;
+    border-radius: 5px;
+  }
+} */
 .inside-form .input-name,
 .input-pass {
   width: 100%;
@@ -346,4 +363,84 @@ pre {
   padding: 0px;
   color: rgb(254, 61, 54);
   font-weight: bold;
+}
+/* ----------------------cart-------------------- */
+.cart-div {
+  height: fit-content;
+  width: 90vw;
+  padding: 20px 50px;
+  box-shadow: 0px 0px 5px 1px grey;
+  margin: 0px auto 30px;
+  border-radius: 5px;
+}
+.shop-cart {
+  font-size: 1.2rem;
+}
+hr {
+  margin: 20px 0px;
+  border: 1px solid grey;
+}
+.ordered-item-img img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+.order-flex {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+}
+.ordered-details {
+  padding: 0px 20px;
+}
+.ordered-food-name h3 {
+  font-size: 2rem;
+}
+.ordered-food-des p {
+  font-size: 1.2rem;
+  color: rgb(173, 171, 171);
+}
+
+.orderd-food-details {
+  font-size: 1.2rem;
+}
+.orderd-food-price {
+  padding: 2px 0px;
+}
+.orderd-food-quantity {
+  margin: 5px 0px;
+}
+.veg-nonveg {
+  display: flex;
+}
+.veg-nonveg p {
+  margin-left: 10px;
+}
+.orderd-food-quantity select {
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.orderd-food-quantity select:hover {
+  background-color: rgb(235, 231, 231);
+  box-shadow: 0px 0px 5px 1px grey;
+}
+
+.ordered-food-by {
+  font-size: 1rem;
+  padding: 10px 0px;
+}
+
+.ordered-food-by a {
+  font-size: 1rem;
+  color: #65aed0;
+}
+.sub-total {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 20px;
 }
