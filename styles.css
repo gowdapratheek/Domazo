@@ -35,13 +35,17 @@ nav li a {
 header h1 a {
   font-family: "Roboto Slab", serif;
   font-size: 2rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 900;
 }
+
 .home-singUp {
   background-color: white;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 10px;
+}
+.home-singUp:hover {
+  box-shadow: 5px 5px 10px grey;
 }
 .nav a:hover {
   color: #f67a1f;
@@ -60,8 +64,17 @@ header h1 a {
   margin-left: 10%;
   height: 400px;
   width: 400px;
+  animation: spin 40s linear infinite;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .cover-text {
   width: 400px;
 }
@@ -73,20 +86,30 @@ footer {
   display: flex;
   width: 80%;
   height: 150px;
-  background-color: gray;
-  color: white;
+  background-color: #ff9e5d;
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
   box-sizing: border-box;
-  margin: auto;
+  margin: 10px auto;
+
+  color: #ee2d25;
+  box-shadow: 0px 0px 10px grey;
+}
+.footer-logo {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 900;
 }
 pre {
   font-size: 1.1rem;
 }
+
 .social-media li {
   display: inline-block;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  padding: 20px;
   font-size: 1.5rem;
 }
 /* --restaurant-------------------------- */
@@ -95,6 +118,14 @@ pre {
   width: 30%;
   margin: 20px auto;
 }
+
+.res-cards:hover {
+  box-shadow: 0px 0px 20px grey;
+}
+.card:hover {
+  box-shadow: 10px 10px 10px 2px grey;
+}
+
 .res-cards {
   background-color: #f8f8f8;
   height: auto;
@@ -133,6 +164,7 @@ pre {
 }
 
 .place-name {
+  font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 10px;
   color: rgba(0, 0, 0, 0.87);
@@ -156,6 +188,10 @@ pre {
   padding: 2px 0;
   margin: 0 0 6px 30px;
 }
+.food-types-heading h3,
+.food-brand h3 {
+  margin: 0px 5%;
+}
 
 .food-types-heading h3,
 .res-heading h3,
@@ -174,6 +210,7 @@ pre {
   margin: 30px;
   justify-content: space-around;
 }
+
 .food-types-img img {
   width: 150px;
   height: 150px;
@@ -183,6 +220,7 @@ pre {
   font-family: Okra, Helvetica, sans-serif;
   font-weight: 500;
   color: grey;
+  padding: 10px;
 }
 /* brands */
 .food-brands {
@@ -202,6 +240,7 @@ pre {
   font-family: Okra, Helvetica, sans-serif;
   font-weight: 500;
   color: grey;
+  padding: 15px;
 }
 
 .log-bg-img {
@@ -219,12 +258,6 @@ pre {
   background-position: center;
 }
 
-.wrapper {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .outside-sign-form form {
   height: 600px;
   width: 500px;
@@ -235,7 +268,7 @@ pre {
   padding: 30px;
   border-radius: 20px;
   position: absolute;
-  top: 7%;
+  top: 3%;
   left: 10%;
 }
 .outside-form form {
@@ -248,7 +281,7 @@ pre {
   padding: 30px;
   border-radius: 20px;
   position: absolute;
-  top: 15%;
+  top: 10%;
   right: 15%;
 }
 .inside-form h3 {
@@ -293,13 +326,22 @@ pre {
 }
 .btn {
   text-align: center;
-  margin-left: 20px;
 }
-p {
+.have-acc {
+  text-align: center;
+  font-size: 1rem;
+}
+.dont-acc {
   text-align: center;
   font-size: 1rem;
 }
 .have-acc a {
   padding: 0px;
   color: #ffe62c;
+  font-weight: bold;
+}
+.dont-acc a {
+  padding: 0px;
+  color: rgb(254, 61, 54);
+  font-weight: bold;
 }
