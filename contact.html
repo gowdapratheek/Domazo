@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background-color: beige;
+      }
+      header {
+        background: #333;
+        color: #ffffff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #e8491d 4px solid;
+      }
+
+      #contact-form {
+        background: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #ffffff;
+        color: #e8491d;
+        padding: 10px 15px;
+        border: 1px solid;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #e8491d;
+        color: #ffffff;
+      }
+      .cen {
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+        margin-top: 100px;
+      }
+      .container {
+        width: 60vh;
+        margin: auto;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="home">
+      <h1><a href="./index.html">Domazo</a></h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li>
+            <a href="./cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping fa-bounce"
+                style="color: #000000"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cen">
+      <div class="container">
+        <form id="contact-form" method="post" action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
