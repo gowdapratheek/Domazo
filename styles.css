@@ -49,7 +49,7 @@ header h1 a {
   box-shadow: 5px 5px 10px grey;
 }
 .nav a:hover {
-  color: #f67a1f;
+  color: #32a9e5;
 }
 
 .butter {
@@ -365,24 +365,32 @@ pre {
   font-weight: bold;
 }
 /* ----------------------cart-------------------- */
+.cart-body {
+  background-color: #eaeded;
+}
+.sub {
+  display: flex;
+  justify-content: space-around;
+}
 .cart-div {
   height: fit-content;
-  width: 90vw;
+  width: 60vw;
   padding: 20px 50px;
-  box-shadow: 0px 0px 5px 1px grey;
-  margin: 0px auto 30px;
+  margin-bottom: 10px;
+  background-color: white;
+
   border-radius: 5px;
 }
 .shop-cart {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 hr {
   margin: 20px 0px;
   border: 1px solid grey;
 }
 .ordered-item-img img {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 10px;
 }
 .order-flex {
@@ -394,30 +402,30 @@ hr {
   padding: 0px 20px;
 }
 .ordered-food-name h3 {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .ordered-food-des p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: rgb(173, 171, 171);
 }
 
 .orderd-food-details {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .orderd-food-price {
   padding: 2px 0px;
 }
-.orderd-food-quantity {
-  margin: 5px 0px;
-}
+
 .veg-nonveg {
   display: flex;
+  margin-top: 5px;
+  font-size: 0.9rem;
 }
 .veg-nonveg p {
   margin-left: 10px;
 }
 .orderd-food-quantity select {
-  padding: 10px;
+  padding: 5px;
   font-size: 0.9rem;
   border: 1px solid grey;
   border-radius: 10px;
@@ -443,4 +451,82 @@ hr {
   display: flex;
   justify-content: flex-end;
   padding: 0px 20px;
+}
+
+.total-to-pay {
+  height: fit-content;
+  width: fit-content;
+  padding: 20px 50px;
+  border-radius: 5px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+.sub-total-to-pay {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.bill-details {
+  font-size: 1.2rem;
+  padding: 0px 0px 5px 0px;
+}
+.item-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0px 0px 5px 0px;
+}
+.del-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0px 0px 5px 0px;
+}
+.del-tip {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0px 0px 5px 0px;
+}
+.del-tip input {
+  width: 30px;
+}
+.fee-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0px 0px 5px 0px;
+}
+.gst-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0px 0px 5px 0px;
+}
+
+.final-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-size: 1.2rem;
+  padding: 0px 0px 5px 0px;
+}
+.proceed-to-pay {
+  text-align: center;
+}
+.proceed-to-pay input {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid;
+  color: #e56e32;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.proceed-to-pay input:hover {
+  color: white;
+  background-color: #e56e32;
 }
