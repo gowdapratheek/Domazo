@@ -53,13 +53,35 @@ header h1 a {
 }
 
 @media only screen and (max-width: 850px) {
-  nav {
-    display: none;
-  }
-
   .hamburger-icon {
     display: block;
     cursor: pointer;
+    z-index: 10;
+  }
+  nav ul {
+    background-color: #eaeded;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -500%;
+    transition: 0.3s ease-in-out;
+    opacity: 0.9;
+  }
+  .visible {
+    margin-top: 0;
+  }
+  nav li {
+    padding: 10px;
+  }
+  nav li a {
+    margin-left: 0;
   }
 }
 
@@ -425,20 +447,19 @@ pre {
 }
 
 .outside-sign-form form {
-  height: 600px;
+  height: 90vh;
   width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #a9ce05;
-  padding: 30px;
   border-radius: 20px;
   position: absolute;
   top: 3%;
   left: 10%;
 }
 .outside-sign-form * {
-  padding: 12px;
+  padding: 10px;
   border: 0;
   border-radius: 5px;
 }

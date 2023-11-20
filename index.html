@@ -44,7 +44,7 @@
     <!-- -----------------------------foods------------------------- -->
 
     <div class="food-types-heading">
-      <h3>Inspiration for your first order image Biryani image Pizza</h3>
+      <h3>Inspiration for your first order</h3>
     </div>
     <div class="food-types">
       <!-- ------------------------->
@@ -341,5 +341,15 @@
         </li>
       </ul>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerIcon = document.querySelector(".hamburger-icon");
+        const nav = document.querySelector("nav ul");
+
+        hamburgerIcon.addEventListener("click", function () {
+          nav.classList.toggle("visible");
+        });
+      });
+    </script>
   </body>
 </html>
