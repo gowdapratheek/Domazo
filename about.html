@@ -85,15 +85,19 @@
         height: auto;
         border-radius: 4px;
       }
+      @media only screen and (max-width: 1200px) {
+        nav {
+          display: none;
+        }
 
-      footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1em 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        .hamburger-icon {
+          display: block;
+          cursor: pointer;
+        }
+        section {
+          max-width: 90%;
+          padding: 10px;
+        }
       }
     </style>
   </head>
@@ -115,6 +119,7 @@
           </li>
         </ul>
       </nav>
+      <div class="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
     </header>
 
     <section>

@@ -70,6 +70,40 @@
         margin: auto;
         overflow: hidden;
       }
+      @media only screen and (max-width: 1200px) {
+        nav {
+          display: none;
+        }
+
+        .hamburger-icon {
+          display: block;
+          cursor: pointer;
+        }
+
+        #contact-form {
+          margin: 20px;
+          width: 90%;
+        }
+
+        input,
+        textarea {
+          width: 85%;
+          padding: 8px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        .container {
+          width: auto;
+          max-width: 90%;
+        }
+
+        .cen {
+          margin-top: 50px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -90,6 +124,7 @@
           </li>
         </ul>
       </nav>
+      <div class="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
     </header>
     <div class="cen">
       <div class="container">
